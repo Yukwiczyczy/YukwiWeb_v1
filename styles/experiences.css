@@ -1,0 +1,34 @@
+@import url(./default.css);
+
+main {
+    background-color: transparent;
+}
+
+.experience-container {
+
+    .experience-item {
+        background-color: rgba(255, 252, 242, 0.06);
+        width: auto !important;
+        border-radius: 10px;
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 400;
+            
+            span {
+                color: var(--secondary-c2);
+                font-weight: 600;
+            }
+        }
+        p {
+            font-weight: 200;
+        }
+    }
+
+    .machine-learning {
+        background: linear-gradient(90deg, var(--secondary-color) 20%, transparent 25%) !important;
+    }
+    .web-development {
+        background: linear-gradient(90deg, var(--secondary-color) 50%, transparent 55%) !important;
+    }
+}

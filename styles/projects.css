@@ -1,0 +1,41 @@
+@import url(./default.css);
+
+.project-main {
+  margin-top: 4rem !important;
+  .article-center {
+    .project-article {
+      background-color: rgba(255, 252, 242, 0.06);
+      padding: 2rem 4rem;
+
+      h2, p {
+        font-weight: 200;
+      }
+
+      h2 {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+.contact-me {
+  p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    span {
+      padding:  0.4rem 1rem;
+      border-radius: 50px;
+      background-color: rgba(255, 252, 242, 0.06);
+      
+    }
+
+    span:hover {
+        box-shadow: 0 0 4px var(--text-color-l);
+    }
+    span:active {
+        box-shadow: 0 0 4px var(--secondary-c2);
+    }
+  }
+}

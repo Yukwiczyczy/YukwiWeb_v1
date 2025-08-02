@@ -1,0 +1,26 @@
+@import url(./default.css);
+
+.experience-container {
+
+    .machine-learning {
+        background: linear-gradient(90deg, var(--secondary-color) 20%, transparent 25%) !important;
+    }
+    .web-development {
+        background: linear-gradient(90deg, var(--secondary-color) 50%, transparent 55%) !important;
+    }
+
+    .certification-button {
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+@media (width < 640px) {
+    .experience-container {
+        .experience-item {
+            h2 {
+                font-size: 2rem !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.certification-information {
+    .certification-information-content {
+        padding: 1.5rem 2.5rem;
+
+        h2, p {
+            font-weight: 200;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+}

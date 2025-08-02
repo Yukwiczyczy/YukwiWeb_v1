@@ -1,0 +1,128 @@
+@import url(./default.css);
+@import url(./index.css);
+@import url(./experiences.css);
+@import url(./projects.css);
+@import url(./skills.css);
+@import url(./education-style.css);
+@import url(./certifications.css);
+
+/* Navigation CSS */
+.navigation-section {
+  background-color: rgba(255, 252, 242, 0.06);
+  margin-top: 8rem !important;
+
+  .image-logo-link {
+    /* background-color: var(--accent-color); */
+    position: relative;
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+    cursor: pointer;
+
+    .logo-icon {
+      height: 230%;
+    }
+
+    .inner-text-logo {
+      align-self: center;
+      font-size: 2.5rem;
+    }
+  }
+
+}
+
+.navigation-section-lg-hidden {
+  display: none;
+}
+
+footer, .contact-me {
+  justify-self: flex-end;
+  letter-spacing: 2px;
+  font-weight: 200;
+  margin-top: auto;
+  padding: 2rem;
+}
+
+
+/* Media Responsive */
+@media (width < 1150px) {
+  .navigation-section {
+    justify-content: center !important;
+    padding: 0 0;
+
+    .image-logo-link {
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .website-links {
+      display: none !important;
+    }
+  }
+
+  .navigation-section-lg-hidden {
+    display: block;
+    .links-container {
+      .current {
+        color: #252422ff !important;
+      }
+    }
+  }
+
+}
+
+@media (width < 600px) {
+  .navigation-section {
+    justify-content: center !important;
+    padding: 0 0;
+
+    .image-logo-link {
+      img {
+        display: none;
+      }
+    }
+  }
+
+  .navigation-section-lg-hidden {
+    height: auto;
+    padding: 1rem 0;
+    border-radius: 20px;
+    
+    article {
+      ul {
+        gap: 1rem;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (width < 450px) {
+  .navigation-section {
+    justify-content: center !important;
+    padding: 0 0;
+
+    .image-logo-link {
+      img {
+        display: block;
+      }
+
+      h1 {
+        display: none;
+      }
+    }
+  }
+
+  .navigation-section-lg-hidden {
+    height: auto;
+    padding: 1rem;
+    border-radius: 20px;
+
+    article {
+      ul {
+        flex-direction: column;
+        gap: 2rem;
+      }
+    }
+  }
+}

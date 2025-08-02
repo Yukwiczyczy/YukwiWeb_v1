@@ -1,0 +1,78 @@
+@import url(./default.css);
+
+main {
+  height: auto;
+  background-color: rgba(255, 252, 242, 0.06);
+  border-radius: 10px;
+  margin-top: 8rem !important;
+
+  article {
+    padding: 0 4rem;
+    padding-left: 8rem;
+    
+    img {
+      height: 120%;
+    }
+
+    .content {
+      color: var(--text-color-);
+      align-self: flex-start;
+      padding: 0;
+      justify-content: center;
+      height: auto;
+
+      .introduce {
+        padding: 0;
+
+        h2 {
+          font-size: 3rem;
+          font-weight: 400;
+          margin: 0;
+          padding: 0;
+          
+        }
+
+      }
+
+      p{
+        font-weight: 200;
+        letter-spacing: .1rem;
+      }
+    }
+  }
+}
+
+footer {
+    margin: 2rem 0;
+}
+
+@media (width < 1165px) {
+    .introduce {
+        h2 {
+            line-height: 2.5rem;
+        }
+    }
+}
+@media (width < 1135px) {
+   main {
+    article {
+        flex-direction: column;
+        padding: 0 2rem 2rem 2rem;
+
+        img {
+            display: none;
+        }
+
+        .content {
+            .introduce {
+                h2 {
+                    line-height: 3renm;
+                }
+                p {
+                    margin-top: .5rem;
+                }
+            }
+        }
+    }
+   }
+}
